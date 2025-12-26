@@ -276,9 +276,7 @@ AWS has the following naming convention:
 - Define max spot price and get the instance while current spot price < max
 - The hourly spot price varies based on offer and capacity
 - If the current spot price > your max price, you can choose to stop or terminate your instance with a 2-minute grace period.
-- Other strategy: **Spot Block**
-  - “Block” spot instance during a specified time frame (1 to 6 hours) without interruptions
-  - In rare situations, the instance may be reclaimed
+
 - Used for batch jobs, data analysis, or workloads that are resilient to failures.
 - Not great for critical jobs or databases
 
