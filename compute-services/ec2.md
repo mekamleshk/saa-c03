@@ -289,7 +289,7 @@ AWS has the following naming convention:
 
 [EC2 Spot Instance Pricing](https://console.aws.amazon.com/ec2sp/v1/spot/home?region=us-east-1#)
 
-User-defined max price
+![alt text](image.png)
 
 
 <br/>
@@ -299,6 +299,8 @@ User-defined max price
 ## How to terminate Spot Instances?
 
 [Spot Instance Termination Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html)
+
+![alt text](image-1.png)
 
 - You can only cancel Spot Instance requests that are open, active, or disabled.
 - Cancelling a Spot Request does not terminate instances.
