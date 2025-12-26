@@ -25,10 +25,11 @@ AWS has the following naming convention:
 
 # Compute Optimized
 
-| Instance Types                                                                 |
-| ------------------------------------------------------------------------------ |
-| C5, C5a, C5ad, C5d, C5n, C6a, C6g, C6gn, C6i, C6id, C6in, C7a, C7g, C7gd, C7gn |
-| C7i, C7i-flex, C8a, C8g, C8gb, C8gd, C8gn, C8i, C8i-flex                       |
+| Instance Types                                                                   |
+| -------------------------------------------------------------------------------- |
+| C5, C5a, C5ad, C5d, C5n, C6a, C6g, C6gn, C6i, C6id, C6in, C7a, C7g, C7gd, C7gn   |
+| -------------------------------------------------------------------------------- |
+| C7i, C7i-flex, C8a, C8g, C8gb, C8gd, C8gn, C8i, C8i-flex                         |
 
 - Designed for compute-intensive applications that benefit from high-performance processors.  
 - These instances are ideal for batch processing workloads, media transcoding, high-performance web servers, high-performance computing (HPC), scientific modeling, dedicated gaming servers, ad server engines, and machine learning inference.  
