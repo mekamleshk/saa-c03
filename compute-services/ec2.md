@@ -8,7 +8,7 @@ AWS has the following naming convention:
 - **2xlarge:** size within the instance class  
 <br/><br/>
 
-## General Purpose
+# General Purpose
 
 | Instance Types                                                              |
 | --------------------------------------------------------------------------- |
@@ -16,11 +16,11 @@ AWS has the following naming convention:
 | M7a, M7g, M7gd, M7i, M7i-flex, M8a, M8g, M8gb, M8gd, M8gn, M8i, M8i-flex    |
 | Mac1, Mac2, Mac2-m1ultra, Mac2-m2, Mac2-m2pro, Mac-m4, Mac-m4pro            |
 | T2, T3, T3a, T4g                                                            |
-<br/>
 
-- Provide a balance of compute, memory, and networking resources.  
+- **Provide a balance of compute, memory, and networking resources.**  
 - These instances are ideal for applications that use these resources in equal proportions, such as web servers and code repositories.  
-- The **T** instance family is also referred to as burstable performance instances. These instances provide a baseline CPU performance with the ability to burst above the baseline at any time. For more information, see [Burstable performance instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html) in the Amazon EC2 User Guide.  
+- The **T** instance family is also referred to as burstable performance instances. These instances provide a baseline CPU performance with the ability to burst above the baseline at any time. For more information, see [Burstable performance instances in the Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html).
+
 <br/><br/><br/>
 
 ## Compute Optimized
