@@ -38,24 +38,25 @@ AWS has the following naming convention:
 
 # Memory Optimized
 
+| Instance Types                                               |
 | ------------------------------------------------------------ |
-| R5, R5a, R5ad, R5b, R5d, R5dn, R5n                          |
-| ----------------------------------------------------------- |
-| R6a, R6g, R6gd, R6i, R6id, R6idn, R6in                      |
-| ----------------------------------------------------------- |
-| R7a, R7g, R7gd, R7i, R7iz                                   |
-| ----------------------------------------------------------- |
-| R8a, R8g, R8gb, R8gd, R8gn, R8i, R8i-flex                   |
-| ----------------------------------------------------------- |
-| U-3tb1, U-6tb1, U-9tb1, U-12tb1, U-18tb1, U-24tb1           |
-| ----------------------------------------------------------- |
-| U7i-6tb, U7i-8tb, U7i-12tb, U7in-16tb, U7in-24tb, U7in-32tb |
-| U7inh-32tb                                                  |
-| ----------------------------------------------------------- |
-| X1, X1e, X2gd, X2idn, X2iedn, X2iezn                        |
-| ----------------------------------------------------------- |
-| X8g, X8aedz, z1d                                            |
-| ----------------------------------------------------------- |
+| R5, R5a, R5ad, R5b, R5d, R5dn, R5n                           |
+| ------------------------------------------------------------ |
+| R6a, R6g, R6gd, R6i, R6id, R6idn, R6in                       |
+| -----------------------------------------------------------  |
+| R7a, R7g, R7gd, R7i, R7iz                                    |
+| -----------------------------------------------------------  |
+| R8a, R8g, R8gb, R8gd, R8gn, R8i, R8i-flex                    |
+| -----------------------------------------------------------  |
+| U-3tb1, U-6tb1, U-9tb1, U-12tb1, U-18tb1, U-24tb1            |
+| -----------------------------------------------------------  |
+| U7i-6tb, U7i-8tb, U7i-12tb, U7in-16tb, U7in-24tb, U7in-32tb  |
+| U7inh-32tb                                                   |
+| -----------------------------------------------------------  |
+| X1, X1e, X2gd, X2idn, X2iedn, X2iezn                         |
+| -----------------------------------------------------------  |
+| X8g, X8aedz, z1d                                             |
+| -----------------------------------------------------------  |
 
 - Designed to deliver fast performance for workloads that process large data sets in memory.  
 <br/>
@@ -65,9 +66,11 @@ AWS has the following naming convention:
 | Instance Types                |
 | ----------------------------- |
 | D2, D3, D3en, H1              |
+| ----------------------------- |
 | I3, I3en, I4g, I4i, I7i, I7ie |
+| ----------------------------- |
 | I8g, I8ge, Im4gn, Is4gen      |
-<br/>
+| ----------------------------- |
 
 - Designed for workloads that require high, sequential read and write access to very large data sets on local storage.  
 - They are optimized to deliver tens of thousands of low-latency, random I/O operations per second (IOPS) to applications.  
@@ -78,11 +81,15 @@ AWS has the following naming convention:
 | Instance Types                             |
 | ------------------------------------------ |
 | DL1, DL2q, F1, F2                          |
+| ------------------------------------------ |
 | G4ad, G4dn, G5, G5g, G6, G6e, G6f          |
+| ------------------------------------------ |
 | Gr6, Gr6f, Inf1, Inf2, P4d, P4de           |
+| ------------------------------------------ |
 | P5, P5e, P5en, P6-B200, P6-B300, P6e-GB200 |
+| ------------------------------------------ |
 | Trn1, Trn1n, Trn2, Trn2u, VT1              |
-<br/>
+| ------------------------------------------ |
 
 - Use hardware accelerators, or co-processors, to perform functions, such as floating-point number calculations, graphics processing, or data pattern matching, more efficiently than is possible in software running on CPUs.  
 <br/>
@@ -92,7 +99,7 @@ AWS has the following naming convention:
 | Instance Types              |
 | --------------------------- |
 | Hpc6a, Hpc6id, Hpc7a, Hpc7g |
-<br/>
+| --------------------------- |
 
 - Purpose-built to offer the best price performance for running HPC workloads at scale on AWS.  
 - These instances are ideal for applications that benefit from high-performance processors, such as large, complex simulations and deep learning workloads.  
