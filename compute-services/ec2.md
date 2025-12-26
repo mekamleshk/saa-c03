@@ -1,4 +1,4 @@
-# EC2 Instance Types - Overview
+# EC2 Instance Types
 
 You can use different types of EC2 instances that are optimized for different use cases ([AWS EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/))  
 AWS has the following naming convention:  
@@ -104,3 +104,228 @@ AWS has the following naming convention:
 
 - Purpose-built to offer the best price performance for running HPC workloads at scale on AWS.  
 - These instances are ideal for applications that benefit from high-performance processors, such as large, complex simulations and deep learning workloads.  
+<br/>
+----------------------------------------------------------------------------------------------------
+<br/><br/>
+
+# EC2 Instances Purchasing Options
+
+- **On-Demand Instances** – short workload, predictable pricing, pay by second  
+- **Reserved (1 & 3 years)**
+  - **Reserved Instances** – long workloads  
+  - **Convertible Reserved Instances** – long workloads with flexible instances  
+- **Savings Plans (1 & 3 years)** – commitment to an amount of usage, long workload  
+- **Spot Instances** – short workloads, cheap, can lose instances (less reliable)  
+- **Dedicated Hosts** – book an entire physical server, control instance placement  
+- **Dedicated Instances** – no other customers will share your hardware  
+- **Capacity Reservations** – reserve capacity in a specific AZ for any duration
+
+<br/>
+
+---
+
+## EC2 On Demand
+
+- Pay for what you use:
+  - Linux or Windows - billing per second, after the first minute
+  - All other operating systems - billing per hour
+- Has the highest cost but no upfront payment
+- No long-term commitment
+- Recommended for short-term and uninterrupted workloads, where you can't predict how the application will behave
+
+<br/>
+
+---
+
+## EC2 Reserved Instances
+
+- Up to 72% discount compared to On-demand
+- You reserve a specific instance attributes (Instance Type, Region, Tenancy, OS)
+- **Reservation Period** – 1 year (+discount) or 3 years (+++discount)
+- **Payment Options** – No Upfront (+), Partial Upfront (++), All Upfront (+++)
+- Reserved Instance’s Scope – Regional or Zonal (reserve capacity in an AZ)
+- Recommended for steady-state usage applications (think database)
+- You can buy and sell in the Reserved Instance Marketplace
+
+<br/>
+
+---
+### Convertible Reserved Instance
+
+- Can change the EC2 instance type, instance family, OS, scope, and tenancy
+- Up to 66% discount  
+> Note: The % discounts are different over time – the exact numbers are not needed for the exam. This is just for illustrative purposes.
+
+
+<br/>
+
+---
+
+## EC2 Savings Plans
+
+- Get a discount based on long-term usage (up to 72% - same as RIs)
+- Commit to a certain type of usage ($10/hour for 1 or 3 years)
+- Usage beyond EC2 Savings Plans is billed at the On-Demand price
+- Locked to a specific instance family & AWS region (e.g., M5 in us-east-1)
+- **Flexible across:**
+  - Instance Size (e.g., m5.xlarge, m5.2xlarge)
+  - OS (e.g., Linux, Windows)
+  - Tenancy (Host, Dedicated, Default)
+
+
+<br/>
+
+---
+
+## EC2 Spot Instances
+
+- Can get a discount of up to 90% compared to On-demand
+- Instances that you can “lose” at any point of time if your max price is less than the current spot price
+- The MOST cost-efficient instances in AWS
+- Useful for workloads that are resilient to failure:
+  - Batch jobs
+  - Data analysis
+  - Image processing
+  - Any distributed workloads
+  - Workloads with a flexible start and end time
+- Not suitable for critical jobs or databases
+
+
+<br/>
+
+---
+
+## EC2 Dedicated Hosts
+
+- A physical server with EC2 instance capacity fully dedicated to your use
+- Allows you to address compliance requirements and use your existing server-bound software licenses (per-socket, per-core, per-VM software licenses)
+- **Purchasing Options:**
+  - On-demand – pay per second for active Dedicated Host
+  - Reserved - 1 or 3 years (No Upfront, Partial Upfront, All Upfront)
+- The most expensive option
+- Useful for software that has complicated licensing models (BYOL – Bring Your Own License) or for companies with strong regulatory or compliance needs
+
+
+<br/>
+
+---
+
+## EC2 Dedicated Instances
+
+- Instances run on hardware that’s dedicated to you
+- May share hardware with other instances in the same account
+- No control over instance placement (can move hardware after Stop / Start)
+
+
+<br/>
+
+---
+
+## EC2 Capacity Reservations
+
+- Reserve On-Demand instances capacity in a specific AZ for any duration
+- You always have access to EC2 capacity when you need it
+- No time commitment (create/cancel anytime), no billing discounts
+- Combine with Regional Reserved Instances and Savings Plans to benefit from billing discounts
+- You’re charged at On-Demand rate whether you run instances or not
+- Suitable for short-term, uninterrupted workloads that need to be in a specific AZ
+
+
+<br/>
+
+---
+
+## Which purchasing option is right for me?
+
+- **On demand**: coming and staying in resort whenever we like, we pay the full price
+- **Reserved**: like planning ahead and if we plan to stay for a long time, we may get a good discount.
+- **Savings Plans**: pay a certain amount per hour for a certain period and stay in any room type (e.g., King, Suite, Sea View)
+- **Spot instances**: the hotel allows people to bid for the empty rooms and the highest bidder keeps the rooms. You can get kicked out at any time
+- **Dedicated Hosts**: We book an entire building of the resort
+- **Capacity Reservations**: you book a room for a period with full price even if you don’t stay in it
+
+
+<br/>
+
+---
+
+## Price Comparison
+
+**Example – m4.large – us-east-1**
+
+| Price Type                             | Price (per hour)                           |
+| -------------------------------------- | ------------------------------------------ |
+| On-Demand                              | $0.10                                      |
+| Spot Instance (Spot Price)             | $0.038 - $0.039 (up to 61% off)            |
+| Reserved Instance (1 year)             | $0.062 (No Upfront) - $0.058 (All Upfront) |
+| Reserved Instance (3 years)            | $0.043 (No Upfront) - $0.037 (All Upfront) |
+| EC2 Savings Plan (1 year)              | $0.062 (No Upfront) - $0.058 (All Upfront) |
+| Reserved Convertible Instance (1 year) | $0.071 (No Upfront) - $0.066 (All Upfront) |
+| Dedicated Host On-Demand Price         | [Varies by instance]                       |
+| Dedicated Host Reservation             | Up to 70% off                              |
+| Capacity Reservations                  | On-Demand Price                            |
+
+
+<br/>
+
+---
+
+## EC2 Spot Instance Requests
+
+- Can get a discount of up to 90% compared to On-demand
+- Define max spot price and get the instance while current spot price < max
+- The hourly spot price varies based on offer and capacity
+- If the current spot price > your max price, you can choose to stop or terminate your instance with a 2-minute grace period.
+- Other strategy: **Spot Block**
+  - “Block” spot instance during a specified time frame (1 to 6 hours) without interruptions
+  - In rare situations, the instance may be reclaimed
+- Used for batch jobs, data analysis, or workloads that are resilient to failures.
+- Not great for critical jobs or databases
+
+
+<br/>
+
+---
+
+## EC2 Spot Instances Pricing
+
+[EC2 Spot Instance Pricing](https://console.aws.amazon.com/ec2sp/v1/spot/home?region=us-east-1#)
+
+User-defined max price
+
+
+<br/>
+
+---
+
+## How to terminate Spot Instances?
+
+[Spot Instance Termination Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html)
+
+- You can only cancel Spot Instance requests that are open, active, or disabled.
+- Cancelling a Spot Request does not terminate instances.
+- You must first cancel a Spot Request, and then terminate the associated Spot Instances.
+
+
+<br/>
+
+---
+
+## Spot Fleets
+
+- **Spot Fleets** = set of Spot Instances + (optional) On-Demand Instances
+- The Spot Fleet will try to meet the target capacity with price constraints
+- Define possible launch pools: instance type (m5.large), OS, Availability Zone
+- Can have multiple launch pools, so that the fleet can choose
+- Spot Fleet stops launching instances when reaching capacity or max cost
+- Strategies to allocate Spot Instances:
+  - **lowestPrice**: from the pool with the lowest price (cost optimization, short workload)
+  - **diversified**: distributed across all pools (great for availability, long workloads)
+  - **capacityOptimized**: pool with the optimal capacity for the number of instances
+  - **priceCapacityOptimized** (recommended): pools with the highest capacity available, then select the pool with the lowest price (best choice for most workloads)
+- Spot Fleets allow us to automatically request Spot Instances with the lowest price
+
+
+<br/>
+
+---
