@@ -10,12 +10,12 @@ AWS has the following naming convention:
 
 # General Purpose
 
-| Instance Types                                                              |
-| --------------------------------------------------------------------------- |
-| M5, M5a, M5ad, M5d, M5dn, M5n, M5zn, M6a, M6g, M6gd, M6i, M6id, M6idn, M6in |
-| M7a, M7g, M7gd, M7i, M7i-flex, M8a, M8g, M8gb, M8gd, M8gn, M8i, M8i-flex    |
-| Mac1, Mac2, Mac2-m1ultra, Mac2-m2, Mac2-m2pro, Mac-m4, Mac-m4pro            |
-| T2, T3, T3a, T4g                                                            |
+| Instance Types                                                               |
+| ---------------------------------------------------------------------------- |
+| M5, M5a, M5ad, M5d, M5dn, M5n, M5zn, M6a, M6g, M6gd, M6i, M6id, M6idn, M6in, |
+| M7a, M7g, M7gd, M7i, M7i-flex, M8a, M8g, M8gb, M8gd, M8gn, M8i, M8i-flex,    |
+| Mac1, Mac2, Mac2-m1ultra, Mac2-m2, Mac2-m2pro, Mac-m4, Mac-m4pro             |
+| T2, T3, T3a, T4g                                                             |
 
 - **Provide a balance of compute, memory, and networking resources.**  
 - These instances are ideal for applications that use these resources in equal proportions, such as web servers and code repositories.  
