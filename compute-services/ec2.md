@@ -21,9 +21,9 @@ AWS has the following naming convention:
 - These instances are ideal for applications that use these resources in equal proportions, such as web servers and code repositories.  
 - The **T** instance family is also referred to as burstable performance instances. These instances provide a baseline CPU performance with the ability to burst above the baseline at any time. For more information, see [Burstable performance instances in the Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html).
 
-<br/><br/><br/>
+<br/>
 
-## Compute Optimized
+# Compute Optimized
 
 | Instance Types                                                                 |
 | ------------------------------------------------------------------------------ |
@@ -33,9 +33,9 @@ AWS has the following naming convention:
 
 - Designed for compute-intensive applications that benefit from high-performance processors.  
 - These instances are ideal for batch processing workloads, media transcoding, high-performance web servers, high-performance computing (HPC), scientific modeling, dedicated gaming servers, ad server engines, and machine learning inference.  
-<br/><br/><br/>
+<br/>
 
-## EC2 Instance Types – Memory Optimized
+# Memory Optimized
 
 | Instance Types                                              |
 | ----------------------------------------------------------- |
@@ -51,9 +51,9 @@ AWS has the following naming convention:
 <br/>
 
 - Designed to deliver fast performance for workloads that process large data sets in memory.  
-<br/><br/><br/>
+<br/>
 
-## EC2 Instance Types – Storage Optimized
+# Storage Optimized
 
 | Instance Types                |
 | ----------------------------- |
@@ -64,7 +64,7 @@ AWS has the following naming convention:
 
 - Designed for workloads that require high, sequential read and write access to very large data sets on local storage.  
 - They are optimized to deliver tens of thousands of low-latency, random I/O operations per second (IOPS) to applications.  
-<br/><br/><br/>
+<br/>
 
 ## Accelerated Computing
 
@@ -78,9 +78,9 @@ AWS has the following naming convention:
 <br/>
 
 - Use hardware accelerators, or co-processors, to perform functions, such as floating-point number calculations, graphics processing, or data pattern matching, more efficiently than is possible in software running on CPUs.  
-<br/><br/><br/>
+<br/>
 
-## High-Performance Computing
+# High-Performance Computing
 
 | Instance Types              |
 | --------------------------- |
