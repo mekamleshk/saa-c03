@@ -57,6 +57,8 @@
 - **Fast Snapshot Restore (FSR)**:
   - Force full initialization of the snapshot to have no latency on the first use (extra cost).
 
+![alt text](image-12.png)
+
 ---
 
 ## EBS Volume Types
@@ -80,6 +82,10 @@ EBS Volumes come in 6 types:
 
 ### **General Purpose SSD (gp2 / gp3)**
 
+![alt text](image-8.png)
+
+![alt text](image-9.png)
+
 - Cost-effective storage with low-latency.
 - Use cases:
   - System boot volumes, virtual desktops, development, and test environments.
@@ -92,6 +98,8 @@ EBS Volumes come in 6 types:
 
 ### **Provisioned IOPS (PIOPS) SSD (io1 / io2 Block Express)**
 
+![alt text](image-10.png)
+
 - Critical business applications with sustained IOPS performance.
 - Great for database workloads (sensitive to storage performance and consistency).
   - **io1** (4 GiB - 16 TiB):
@@ -103,6 +111,8 @@ EBS Volumes come in 6 types:
     - Supports **EBS Multi-Attach**.
 
 ### **Hard Disk Drives (HDD) – st1 / sc1**
+
+![alt text](image-11.png)
 
 - Cannot be a boot volume.
   - **st1**:

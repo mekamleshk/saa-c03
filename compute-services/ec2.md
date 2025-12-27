@@ -1,5 +1,7 @@
 # EC2 Instance Types
 
+![alt text](image-5.png)
+
 You can use different types of EC2 instances that are optimized for different use cases ([AWS EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/))  
 AWS has the following naming convention:  
 `m5.2xlarge`  
@@ -139,6 +141,8 @@ AWS has the following naming convention:
 
 ## EC2 Reserved Instances
 
+![alt text](image-6.png)
+
 - Up to 72% discount compared to On-demand
 - You reserve a specific instance attributes (Instance Type, Region, Tenancy, OS)
 - **Reservation Period** – 1 year (+discount) or 3 years (+++discount)
@@ -148,6 +152,8 @@ AWS has the following naming convention:
 - You can buy and sell in the Reserved Instance Marketplace
 
 <br/>
+
+![alt text](image-9.png)
 
 ---
 ### Convertible Reserved Instance
@@ -172,6 +178,7 @@ AWS has the following naming convention:
   - OS (e.g., Linux, Windows)
   - Tenancy (Host, Dedicated, Default)
 
+![alt text](image-10.png)
 
 <br/>
 
@@ -197,6 +204,8 @@ AWS has the following naming convention:
 
 ## EC2 Dedicated Hosts
 
+![alt text](image-7.png)
+
 - A physical server with EC2 instance capacity fully dedicated to your use
 - Allows you to address compliance requirements and use your existing server-bound software licenses (per-socket, per-core, per-VM software licenses)
 - **Purchasing Options:**
@@ -211,6 +220,9 @@ AWS has the following naming convention:
 ---
 
 ## EC2 Dedicated Instances
+
+![alt text](image-8.png)
+
 
 - Instances run on hardware that’s dedicated to you
 - May share hardware with other instances in the same account
